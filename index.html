@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Drei Mini-Spiele</title>
+  <link rel="stylesheet" href="spiele.css">
+  <script src="spiele.js" defer></script>
+</head>
+<body>
+  <header class="intro">
+    <p class="rubrik">Zukunftstag · Spielideen</p>
+    <h1>Drei Mini-Spiele</h1>
+    <p>Spiele je eine kurze Runde. Welches Spiel möchtest du abwandeln?</p>
+    <nav aria-label="Zu den Spielen">
+      <a href="#fangen">Fang das Ziel</a>
+      <a href="#reaktion">Warte auf Grün</a>
+      <a href="#schatz">Finde den Schatz</a>
+    </nav>
+  </header>
+  <main>
+    <section id="fangen" class="spiel">
+      <h2>Fang das Ziel</h2>
+      <p>Klicke auf den Stern. Bei jedem Treffer springt er weiter. Wie viele Punkte schaffst du in 30 Sekunden?</p>
+      <div class="anzeige">
+        <span>Punkte <strong id="punkte">0</strong></span>
+        <span>Zeit <strong id="zeit">30</strong> s</span>
+      </div>
+      <div class="spielfeld" id="spielfeld">
+        <button type="button" class="stern" id="stern" aria-label="Stern fangen" hidden>★</button>
+      </div>
+      <button type="button" id="fangen-start">Runde starten</button>
+      <p class="meldung" id="fangen-meldung" role="status"></p>
+      <p class="idee"><strong>Deine Variante</strong> · Was könntest du statt eines Sterns fangen?</p>
+    </section>
+
+    <section id="reaktion" class="spiel">
+      <h2>Warte auf Grün</h2>
+      <p>Starte die Runde. Warte, bis das Feld grün wird und «Los!» erscheint. Klicke dann so schnell wie möglich.</p>
+      <button type="button" id="reaktionsfeld" class="reaktionsfeld">Runde starten</button>
+      <p class="meldung" id="reaktion-meldung" role="status"></p>
+      <p class="idee"><strong>Deine Variante</strong> · Wie könnte ein anderes Startsignal aussehen?</p>
+    </section>
+
+    <section id="schatz" class="spiel">
+      <h2>Finde den Schatz</h2>
+      <p>In einer von drei Kisten liegt ein Schatz. Wähle eine Kiste. Danach siehst du, wo er war.</p>
+      <div class="kisten">
+        <button type="button" class="kiste">Kiste 1</button>
+        <button type="button" class="kiste">Kiste 2</button>
+        <button type="button" class="kiste">Kiste 3</button>
+      </div>
+      <p class="meldung" id="schatz-meldung" role="status">Wähle eine Kiste.</p>
+      <button type="button" id="schatz-neu">Schatz neu verstecken</button>
+      <p class="idee"><strong>Deine Variante</strong> · Was würdest du verstecken und wo?</p>
+    </section>
+  </main>
+</body>
+</html>

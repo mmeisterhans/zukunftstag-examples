@@ -1,0 +1,30 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, sans-serif;
+  color: #192841;
+  background: #eef4f9;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; line-height: 1.55; }
+.intro, main { width: min(50rem, calc(100% - 2rem)); margin: auto; }
+.intro { padding: 2.5rem 0 1rem; }
+h1 { font-size: clamp(2.4rem, 8vw, 4.5rem); line-height: 1; margin: .25em 0; }
+h2 { line-height: 1.2; margin: 0; font-size: 1.65rem; }
+.rubrik { color: #185f70; font-weight: 700; }
+nav, .kisten { display: flex; flex-wrap: wrap; gap: .7rem; }
+nav a { color: #0c4966; font-weight: 700; padding: .35rem .7rem; background: #dcebf5; border-radius: .4rem; }
+.spiel { margin: 1rem 0 1.5rem; padding: clamp(1rem, 4vw, 2rem); background: white; border: 1px solid #ccdae5; border-radius: 1rem; }
+button { font: inherit; font-weight: 700; padding: .55rem .95rem; color: white; background: #184b72; border: 2px solid transparent; border-radius: .45rem; cursor: pointer; }
+button:focus-visible, a:focus-visible { outline: 3px solid #9b4a00; outline-offset: 3px; }
+button:disabled { opacity: .72; cursor: default; }
+.anzeige { display: flex; flex-wrap: wrap; gap: 1.2rem; margin: .6rem 0; }
+.spielfeld { position: relative; height: clamp(12rem, 40vw, 16rem); margin-bottom: .8rem; background: #e5f1f6; border-radius: .55rem; }
+.stern { position: absolute; width: 3.25rem; height: 3.25rem; padding: 0; font-size: 2rem; line-height: 1; color: #532b03; background: #ffda5b; }
+.meldung { min-height: 1.55em; margin: .7rem 0; font-weight: 700; }
+.reaktionsfeld { width: 100%; min-height: 7rem; font-size: 1.3rem; }
+.reaktionsfeld.warten { background: #a73236; }
+.reaktionsfeld.los { background: #116b42; }
+.kiste { flex: 1 1 6rem; min-height: 4rem; color: #482402; background: #f5d6a5; }
+.kiste.gefunden { color: #124b31; background: #a6ecc8; border-color: #26845b; opacity: 1; }
+.idee { margin: 1.15rem 0 0; color: #185f70; }
